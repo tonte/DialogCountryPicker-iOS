@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
   spec.license = { type: 'MIT', file: 'LICENSE' }
   spec.authors = { "Tonte Owuso" => 'tonteowuso@gmail.com' }
   spec.social_media_url = "http://twitter.com/t0nte"
-  spec.swift_version = "4.0"
+  spec.swift_version = "5.0"
   spec.platform = :ios, "8.0"
   spec.requires_arc = true
   spec.source = { git: "https://github.com/tonte/DialogCountryPicker-iOS.git", tag: "v#{spec.version}", submodules: true }

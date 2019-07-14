@@ -13,6 +13,8 @@
 		2FAA641A22DBD4E700F795C7 /* DialogCountryPickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAA641222DBD4E400F795C7 /* DialogCountryPickerItem.swift */; };
 		2FAA641B22DBD59300F795C7 /* CallingCodes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FAA641622DBD4E700F795C7 /* CallingCodes.plist */; };
 		2FAA641C22DBD59400F795C7 /* Flags.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FAA641722DBD4E700F795C7 /* Flags.xcassets */; };
+		2FEE889E22DBF092007A8A74 /* customCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FAA641422DBD4E400F795C7 /* customCells.xib */; };
+		2FEE889F22DBF103007A8A74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAA641022DBD4E400F795C7 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -149,7 +151,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FAA641B22DBD59300F795C7 /* CallingCodes.plist in Resources */,
+				2FEE889E22DBF092007A8A74 /* customCells.xib in Resources */,
 				2FAA641C22DBD59400F795C7 /* Flags.xcassets in Resources */,
+				2FEE889F22DBF103007A8A74 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +225,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -279,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

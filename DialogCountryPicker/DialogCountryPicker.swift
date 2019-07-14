@@ -51,10 +51,10 @@ open class DialogCountryPicker:UIViewController,UITableViewDelegate,UITableViewD
         filterText(searchText: sender.text!)
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+    private func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    private func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 42
     }
     
@@ -107,7 +107,8 @@ open class DialogCountryPicker:UIViewController,UITableViewDelegate,UITableViewD
         countryTableView.reloadData()
     }
     
-    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+    
+    private func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         let selectedCountryItem = filteredCountries[indexPath.row]
         delegate?.didSelectCountry(name: selectedCountryItem.name, dialCode: selectedCountryItem.dialCode, countryCode: selectedCountryItem.countryCode)
         self.dismiss(animated: true, completion: nil)

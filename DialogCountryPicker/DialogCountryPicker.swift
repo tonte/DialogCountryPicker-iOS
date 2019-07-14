@@ -6,11 +6,11 @@
 //  Copyright © 2019 Tonte. All rights reserved.
 //
 import UIKit
-protocol DialogCountryPickerDelegate:class {
+public protocol DialogCountryPickerDelegate:class {
     func didSelectCountry(name:String,dialCode:String,countryCode:String)
 }
 
-class DialogCountryPicker:UIViewController,UITableViewDelegate,UITableViewDataSource {
+open class DialogCountryPicker:UIViewController,UITableViewDelegate,UITableViewDataSource {
     @IBOutlet weak var instructionLabel: UILabel!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var countryTableView: UITableView!
@@ -18,7 +18,7 @@ class DialogCountryPicker:UIViewController,UITableViewDelegate,UITableViewDataSo
     var filteredCountries:[DialogCountryPickerItem] = []
     open weak var delegate: DialogCountryPickerDelegate?
     
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         setupCountries()
         setupDelegates()
@@ -58,11 +58,11 @@ class DialogCountryPicker:UIViewController,UITableViewDelegate,UITableViewDataSo
         return 42
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredCountries.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let index = indexPath.row
         guard let cellNib = Bundle.main.loadNibNamed("customCells", owner: nil, options: nil) else {return UITableViewCell()}
         guard let cell = cellNib[5] as? DialogCountryPickerTableViewCell else {return UITableViewCell()}

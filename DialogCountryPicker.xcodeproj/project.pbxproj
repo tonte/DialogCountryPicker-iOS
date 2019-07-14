@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		2FAA640A22DBD4C000F795C7 /* DialogCountryPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FAA640822DBD4C000F795C7 /* DialogCountryPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FAA641822DBD4E700F795C7 /* DialogCountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAA641322DBD4E400F795C7 /* DialogCountryPicker.swift */; };
+		2FAA641922DBD4E700F795C7 /* DialogCountryPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAA641122DBD4E400F795C7 /* DialogCountryPickerTableViewCell.swift */; };
+		2FAA641A22DBD4E700F795C7 /* DialogCountryPickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAA641222DBD4E400F795C7 /* DialogCountryPickerItem.swift */; };
+		2FAA641B22DBD59300F795C7 /* CallingCodes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FAA641622DBD4E700F795C7 /* CallingCodes.plist */; };
+		2FAA641C22DBD59400F795C7 /* Flags.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FAA641722DBD4E700F795C7 /* Flags.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2FAA640522DBD4C000F795C7 /* DialogCountryPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DialogCountryPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FAA640822DBD4C000F795C7 /* DialogCountryPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DialogCountryPicker.h; sourceTree = "<group>"; };
 		2FAA640922DBD4C000F795C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FAA641022DBD4E400F795C7 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2FAA641122DBD4E400F795C7 /* DialogCountryPickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogCountryPickerTableViewCell.swift; sourceTree = "<group>"; };
+		2FAA641222DBD4E400F795C7 /* DialogCountryPickerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogCountryPickerItem.swift; sourceTree = "<group>"; };
+		2FAA641322DBD4E400F795C7 /* DialogCountryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogCountryPicker.swift; sourceTree = "<group>"; };
+		2FAA641422DBD4E400F795C7 /* customCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customCells.xib; sourceTree = "<group>"; };
+		2FAA641622DBD4E700F795C7 /* CallingCodes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CallingCodes.plist; sourceTree = "<group>"; };
+		2FAA641722DBD4E700F795C7 /* Flags.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Flags.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,9 +59,24 @@
 			isa = PBXGroup;
 			children = (
 				2FAA640822DBD4C000F795C7 /* DialogCountryPicker.h */,
+				2FAA641222DBD4E400F795C7 /* DialogCountryPickerItem.swift */,
+				2FAA641122DBD4E400F795C7 /* DialogCountryPickerTableViewCell.swift */,
+				2FAA641422DBD4E400F795C7 /* customCells.xib */,
+				2FAA641022DBD4E400F795C7 /* Main.storyboard */,
+				2FAA641322DBD4E400F795C7 /* DialogCountryPicker.swift */,
+				2FAA641522DBD4E700F795C7 /* Resources */,
 				2FAA640922DBD4C000F795C7 /* Info.plist */,
 			);
 			path = DialogCountryPicker;
+			sourceTree = "<group>";
+		};
+		2FAA641522DBD4E700F795C7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2FAA641622DBD4E700F795C7 /* CallingCodes.plist */,
+				2FAA641722DBD4E700F795C7 /* Flags.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +117,7 @@
 		2FAA63FC22DBD4C000F795C7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Tonte;
 				TargetAttributes = {
@@ -120,6 +148,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FAA641B22DBD59300F795C7 /* CallingCodes.plist in Resources */,
+				2FAA641C22DBD59400F795C7 /* Flags.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FAA641922DBD4E700F795C7 /* DialogCountryPickerTableViewCell.swift in Sources */,
+				2FAA641A22DBD4E700F795C7 /* DialogCountryPickerItem.swift in Sources */,
+				2FAA641822DBD4E700F795C7 /* DialogCountryPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

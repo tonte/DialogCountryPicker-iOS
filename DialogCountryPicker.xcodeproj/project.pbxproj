@@ -16,7 +16,7 @@
 		2F021A6822DE20370096500C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F021A6622DE20370096500C /* LaunchScreen.storyboard */; };
 		2F021A7022DE2B9D0096500C /* Flags.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FAA641722DBD4E700F795C7 /* Flags.xcassets */; };
 		2F021A7222DE38890096500C /* DialogCountryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F021A7122DE38890096500C /* DialogCountryPickerView.swift */; };
-		2F021A7322DE3EB50096500C /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2F021A4B22DE19D30096500C /* Resources.bundle */; };
+		2F295172232FF50D00997A30 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2F021A4B22DE19D30096500C /* Resources.bundle */; };
 		2FAA640A22DBD4C000F795C7 /* DialogCountryPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FAA640822DBD4C000F795C7 /* DialogCountryPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FAA641822DBD4E700F795C7 /* DialogCountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAA641322DBD4E400F795C7 /* DialogCountryPicker.swift */; };
 		2FAA641922DBD4E700F795C7 /* DialogCountryPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAA641122DBD4E400F795C7 /* DialogCountryPickerTableViewCell.swift */; };
@@ -96,8 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				2FAA641422DBD4E400F795C7 /* customCells.xib */,
-				2FAA641022DBD4E400F795C7 /* Main.storyboard */,
 				2FAA641622DBD4E700F795C7 /* CallingCodes.plist */,
+				2FAA641022DBD4E400F795C7 /* Main.storyboard */,
 				2FAA641722DBD4E700F795C7 /* Flags.xcassets */,
 				2F021A4D22DE19D30096500C /* Info.plist */,
 			);
@@ -274,7 +274,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F021A7322DE3EB50096500C /* Resources.bundle in Resources */,
 				2F021A6822DE20370096500C /* LaunchScreen.storyboard in Resources */,
 				2F021A6522DE20370096500C /* Assets.xcassets in Resources */,
 				2F021A6322DE20360096500C /* Main.storyboard in Resources */,
@@ -285,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F295172232FF50D00997A30 /* Resources.bundle in Resources */,
 				2FAA641B22DBD59300F795C7 /* CallingCodes.plist in Resources */,
 				2FEE889E22DBF092007A8A74 /* customCells.xib in Resources */,
 				2FAA641C22DBD59400F795C7 /* Flags.xcassets in Resources */,
@@ -581,7 +581,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Debug;
@@ -607,7 +607,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Release;

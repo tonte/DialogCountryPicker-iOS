@@ -12,7 +12,7 @@ open class DialogCountryPicker{
     public init() {
     }
     public func display(delegate:DialogCountryPickerDelegate, viewControllerToPresentOn:UIViewController,showDialCode:Bool = true){
-        guard let resourcePath = Bundle.main.path(forResource: "Resources", ofType: "bundle"),
+        guard let resourcePath = Bundle(for: DialogCountryPickerView.classForCoder()).path(forResource: "Resources", ofType: "bundle"),
             let bundle = Bundle(path: resourcePath) else {
                 return
         }

@@ -20,7 +20,7 @@ class DialogCountryPickerTableViewCell: UITableViewCell {
     
     
     func setup(flag:String,name:String,dialCode:String){
-        guard let resourcePath = Bundle.main.path(forResource: "Resources", ofType: "bundle"),
+        guard let resourcePath = Bundle(for: DialogCountryPickerView.classForCoder()).path(forResource: "Resources", ofType: "bundle"),
             let bundle = Bundle(path: resourcePath) else {
                 return
         }

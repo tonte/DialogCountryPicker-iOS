@@ -67,7 +67,7 @@ open class DialogCountryPickerView:UIViewController,UITableViewDelegate,UITableV
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let index = indexPath.row
-        guard let resourcePath = Bundle.main.path(forResource: "Resources", ofType: "bundle"),
+        guard let resourcePath = Bundle(for: DialogCountryPickerView.classForCoder()).path(forResource: "Resources", ofType: "bundle"),
             let bundle = Bundle(path: resourcePath) else {
                 return UITableViewCell()
         }
@@ -122,7 +122,7 @@ open class DialogCountryPickerView:UIViewController,UITableViewDelegate,UITableV
     
     public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         let selectedCountryItem = filteredCountries[indexPath.row]
-        guard let resourcePath = Bundle.main.path(forResource: "Resources", ofType: "bundle"),
+        guard let resourcePath = Bundle(for: DialogCountryPickerView.classForCoder()).path(forResource: "Resources", ofType: "bundle"),
             let bundle = Bundle(path: resourcePath) else {
                 return nil
         }

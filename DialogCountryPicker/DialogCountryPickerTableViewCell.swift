@@ -16,12 +16,15 @@ class DialogCountryPickerTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     
     func setup(flag:String,name:String,dialCode:String){
-        self.flagView.image = UIImage(named: flag)
+        guard let resourcePath = Bundle.main.path(forResource: "Resources", ofType: "bundle"),
+            let bundle = Bundle(path: resourcePath) else {
+                return
+        }
+        self.flagView.image = UIImage(named: flag, in: bundle, compatibleWith: nil)
         self.countryName.text = name
         self.dialCodeLabel.text = dialCode
     }

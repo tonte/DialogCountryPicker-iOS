@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F021A5322DE1AA90096500C /* customCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FAA641422DBD4E400F795C7 /* customCells.xib */; };
+		2F021A5422DE1AA90096500C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAA641022DBD4E400F795C7 /* Main.storyboard */; };
+		2F021A5E22DE20360096500C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F021A5D22DE20360096500C /* AppDelegate.swift */; };
+		2F021A6022DE20360096500C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F021A5F22DE20360096500C /* ViewController.swift */; };
+		2F021A6322DE20360096500C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F021A6122DE20360096500C /* Main.storyboard */; };
+		2F021A6522DE20370096500C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F021A6422DE20370096500C /* Assets.xcassets */; };
+		2F021A6822DE20370096500C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F021A6622DE20370096500C /* LaunchScreen.storyboard */; };
+		2F021A7022DE2B9D0096500C /* Flags.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FAA641722DBD4E700F795C7 /* Flags.xcassets */; };
+		2F021A7222DE38890096500C /* DialogCountryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F021A7122DE38890096500C /* DialogCountryPickerView.swift */; };
+		2F021A7322DE3EB50096500C /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2F021A4B22DE19D30096500C /* Resources.bundle */; };
 		2FAA640A22DBD4C000F795C7 /* DialogCountryPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FAA640822DBD4C000F795C7 /* DialogCountryPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FAA641822DBD4E700F795C7 /* DialogCountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAA641322DBD4E400F795C7 /* DialogCountryPicker.swift */; };
 		2FAA641922DBD4E700F795C7 /* DialogCountryPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAA641122DBD4E400F795C7 /* DialogCountryPickerTableViewCell.swift */; };
@@ -17,7 +27,34 @@
 		2FEE889F22DBF103007A8A74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAA641022DBD4E400F795C7 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2F021A5122DE1A590096500C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FAA63FC22DBD4C000F795C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F021A4A22DE19D30096500C;
+			remoteInfo = Resources;
+		};
+		2F021A6D22DE204F0096500C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FAA63FC22DBD4C000F795C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FAA640422DBD4C000F795C7;
+			remoteInfo = DialogCountryPicker;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		2F021A4B22DE19D30096500C /* Resources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Resources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F021A4D22DE19D30096500C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F021A5B22DE20360096500C /* DialogCountryPickerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DialogCountryPickerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F021A5D22DE20360096500C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F021A5F22DE20360096500C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F021A6222DE20360096500C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F021A6422DE20370096500C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F021A6722DE20370096500C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F021A6922DE20370096500C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F021A7122DE38890096500C /* DialogCountryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogCountryPickerView.swift; sourceTree = "<group>"; };
 		2FAA640522DBD4C000F795C7 /* DialogCountryPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DialogCountryPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FAA640822DBD4C000F795C7 /* DialogCountryPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DialogCountryPicker.h; sourceTree = "<group>"; };
 		2FAA640922DBD4C000F795C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +68,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2F021A4822DE19D30096500C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F021A5822DE20360096500C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2FAA640222DBD4C000F795C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,10 +92,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F021A4C22DE19D30096500C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2FAA641422DBD4E400F795C7 /* customCells.xib */,
+				2FAA641022DBD4E400F795C7 /* Main.storyboard */,
+				2FAA641622DBD4E700F795C7 /* CallingCodes.plist */,
+				2FAA641722DBD4E700F795C7 /* Flags.xcassets */,
+				2F021A4D22DE19D30096500C /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2F021A5C22DE20360096500C /* DialogCountryPickerExample */ = {
+			isa = PBXGroup;
+			children = (
+				2F021A5D22DE20360096500C /* AppDelegate.swift */,
+				2F021A5F22DE20360096500C /* ViewController.swift */,
+				2F021A6122DE20360096500C /* Main.storyboard */,
+				2F021A6422DE20370096500C /* Assets.xcassets */,
+				2F021A6622DE20370096500C /* LaunchScreen.storyboard */,
+				2F021A6922DE20370096500C /* Info.plist */,
+			);
+			path = DialogCountryPickerExample;
+			sourceTree = "<group>";
+		};
 		2FAA63FB22DBD4C000F795C7 = {
 			isa = PBXGroup;
 			children = (
 				2FAA640722DBD4C000F795C7 /* DialogCountryPicker */,
+				2F021A4C22DE19D30096500C /* Resources */,
+				2F021A5C22DE20360096500C /* DialogCountryPickerExample */,
 				2FAA640622DBD4C000F795C7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				2FAA640522DBD4C000F795C7 /* DialogCountryPicker.framework */,
+				2F021A4B22DE19D30096500C /* Resources.bundle */,
+				2F021A5B22DE20360096500C /* DialogCountryPickerExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,22 +143,11 @@
 				2FAA640822DBD4C000F795C7 /* DialogCountryPicker.h */,
 				2FAA641222DBD4E400F795C7 /* DialogCountryPickerItem.swift */,
 				2FAA641122DBD4E400F795C7 /* DialogCountryPickerTableViewCell.swift */,
-				2FAA641422DBD4E400F795C7 /* customCells.xib */,
-				2FAA641022DBD4E400F795C7 /* Main.storyboard */,
 				2FAA641322DBD4E400F795C7 /* DialogCountryPicker.swift */,
-				2FAA641522DBD4E700F795C7 /* Resources */,
+				2F021A7122DE38890096500C /* DialogCountryPickerView.swift */,
 				2FAA640922DBD4C000F795C7 /* Info.plist */,
 			);
 			path = DialogCountryPicker;
-			sourceTree = "<group>";
-		};
-		2FAA641522DBD4E700F795C7 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				2FAA641622DBD4E700F795C7 /* CallingCodes.plist */,
-				2FAA641722DBD4E700F795C7 /* Flags.xcassets */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +164,41 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2F021A4A22DE19D30096500C /* Resources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F021A5022DE19D30096500C /* Build configuration list for PBXNativeTarget "Resources" */;
+			buildPhases = (
+				2F021A4722DE19D30096500C /* Sources */,
+				2F021A4822DE19D30096500C /* Frameworks */,
+				2F021A4922DE19D30096500C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Resources;
+			productName = Resources;
+			productReference = 2F021A4B22DE19D30096500C /* Resources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		2F021A5A22DE20360096500C /* DialogCountryPickerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F021A6A22DE20370096500C /* Build configuration list for PBXNativeTarget "DialogCountryPickerExample" */;
+			buildPhases = (
+				2F021A5722DE20360096500C /* Sources */,
+				2F021A5822DE20360096500C /* Frameworks */,
+				2F021A5922DE20360096500C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F021A6E22DE204F0096500C /* PBXTargetDependency */,
+			);
+			name = DialogCountryPickerExample;
+			productName = DialogCountryPickerExample;
+			productReference = 2F021A5B22DE20360096500C /* DialogCountryPickerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 		2FAA640422DBD4C000F795C7 /* DialogCountryPicker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FAA640D22DBD4C000F795C7 /* Build configuration list for PBXNativeTarget "DialogCountryPicker" */;
@@ -107,6 +211,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				2F021A5222DE1A590096500C /* PBXTargetDependency */,
 			);
 			name = DialogCountryPicker;
 			productName = DialogCountryPicker;
@@ -123,6 +228,12 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Tonte;
 				TargetAttributes = {
+					2F021A4A22DE19D30096500C = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					2F021A5A22DE20360096500C = {
+						CreatedOnToolsVersion = 10.2;
+					};
 					2FAA640422DBD4C000F795C7 = {
 						CreatedOnToolsVersion = 10.2;
 					};
@@ -134,6 +245,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 2FAA63FB22DBD4C000F795C7;
 			productRefGroup = 2FAA640622DBD4C000F795C7 /* Products */;
@@ -141,11 +253,34 @@
 			projectRoot = "";
 			targets = (
 				2FAA640422DBD4C000F795C7 /* DialogCountryPicker */,
+				2F021A4A22DE19D30096500C /* Resources */,
+				2F021A5A22DE20360096500C /* DialogCountryPickerExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2F021A4922DE19D30096500C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F021A7022DE2B9D0096500C /* Flags.xcassets in Resources */,
+				2F021A5322DE1AA90096500C /* customCells.xib in Resources */,
+				2F021A5422DE1AA90096500C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F021A5922DE20360096500C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F021A7322DE3EB50096500C /* Resources.bundle in Resources */,
+				2F021A6822DE20370096500C /* LaunchScreen.storyboard in Resources */,
+				2F021A6522DE20370096500C /* Assets.xcassets in Resources */,
+				2F021A6322DE20360096500C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2FAA640322DBD4C000F795C7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,19 +295,144 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2F021A4722DE19D30096500C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F021A5722DE20360096500C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F021A6022DE20360096500C /* ViewController.swift in Sources */,
+				2F021A5E22DE20360096500C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2FAA640122DBD4C000F795C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2FAA641922DBD4E700F795C7 /* DialogCountryPickerTableViewCell.swift in Sources */,
 				2FAA641A22DBD4E700F795C7 /* DialogCountryPickerItem.swift in Sources */,
+				2F021A7222DE38890096500C /* DialogCountryPickerView.swift in Sources */,
 				2FAA641822DBD4E700F795C7 /* DialogCountryPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2F021A5222DE1A590096500C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F021A4A22DE19D30096500C /* Resources */;
+			targetProxy = 2F021A5122DE1A590096500C /* PBXContainerItemProxy */;
+		};
+		2F021A6E22DE204F0096500C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FAA640422DBD4C000F795C7 /* DialogCountryPicker */;
+			targetProxy = 2F021A6D22DE204F0096500C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F021A6122DE20360096500C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F021A6222DE20360096500C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F021A6622DE20370096500C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F021A6722DE20370096500C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		2F021A4E22DE19D30096500C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonte.ios.Resources;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		2F021A4F22DE19D30096500C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonte.ios.Resources;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		2F021A6B22DE20370096500C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = DialogCountryPickerExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonte.ios.DialogCountryPickerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+			};
+			name = Debug;
+		};
+		2F021A6C22DE20370096500C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = DialogCountryPickerExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonte.ios.DialogCountryPickerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+			};
+			name = Release;
+		};
 		2FAA640B22DBD4C000F795C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -209,6 +469,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -228,10 +489,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -273,6 +535,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -290,6 +553,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -301,7 +565,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = V7CT99HH5C;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -312,11 +576,13 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tonte.ios.DialogCountryPicker;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -326,7 +592,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = V7CT99HH5C;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -340,14 +606,33 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tonte.ios.DialogCountryPicker;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2F021A5022DE19D30096500C /* Build configuration list for PBXNativeTarget "Resources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F021A4E22DE19D30096500C /* Debug */,
+				2F021A4F22DE19D30096500C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F021A6A22DE20370096500C /* Build configuration list for PBXNativeTarget "DialogCountryPickerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F021A6B22DE20370096500C /* Debug */,
+				2F021A6C22DE20370096500C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2FAA63FF22DBD4C000F795C7 /* Build configuration list for PBXProject "DialogCountryPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

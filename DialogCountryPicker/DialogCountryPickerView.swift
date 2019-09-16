@@ -5,7 +5,7 @@
 //
 import UIKit
 public protocol DialogCountryPickerDelegate:class {
-    func didSelectCountry(name:String,dialCode:String,countryCode:String)
+    func didSelectCountry(name:String,dialCode:String,countryCode:String,flag:UIImage)
 }
 
 open class DialogCountryPickerView:UIViewController,UITableViewDelegate,UITableViewDataSource {
@@ -15,10 +15,10 @@ open class DialogCountryPickerView:UIViewController,UITableViewDelegate,UITableV
     var countries:[DialogCountryPickerItem] = []
     var filteredCountries:[DialogCountryPickerItem] = []
     open weak var delegate: DialogCountryPickerDelegate?
+    var showDialCode = true
     
     override open func viewDidLoad() {
         super.viewDidLoad()
-       
         setupCountries()
         setupDelegates()
         
@@ -54,10 +54,10 @@ open class DialogCountryPickerView:UIViewController,UITableViewDelegate,UITableV
         filterText(searchText: sender.text!)
     }
     
-    private func numberOfSections(in tableView: UITableView) -> Int {
+    public func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    private func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 42
     }
     
@@ -75,7 +75,11 @@ open class DialogCountryPickerView:UIViewController,UITableViewDelegate,UITableV
         guard let cellNib = bundle.loadNibNamed("customCells", owner: nil, options: nil) else {return UITableViewCell()}
         guard let cell = cellNib[0] as? DialogCountryPickerTableViewCell else {return UITableViewCell()}
         let country = filteredCountries[index]
-        cell.setup(flag: country.flag, name: country.name, dialCode: country.dialCode)
+        var dialCode = ""
+        if(showDialCode){
+            dialCode = country.dialCode
+        }
+        cell.setup(flag: country.flag, name: country.name, dialCode: dialCode)
         return cell
     }
     func filterText(searchText: String){
@@ -118,7 +122,14 @@ open class DialogCountryPickerView:UIViewController,UITableViewDelegate,UITableV
     
     public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         let selectedCountryItem = filteredCountries[indexPath.row]
-        delegate?.didSelectCountry(name: selectedCountryItem.name, dialCode: selectedCountryItem.dialCode, countryCode: selectedCountryItem.countryCode)
+        guard let resourcePath = Bundle.main.path(forResource: "Resources", ofType: "bundle"),
+            let bundle = Bundle(path: resourcePath) else {
+                return nil
+        }
+        let flag:UIImage? = UIImage(named: selectedCountryItem.flag, in: bundle, compatibleWith: nil)
+        if let flagImage = flag{
+            delegate?.didSelectCountry(name: selectedCountryItem.name, dialCode: selectedCountryItem.dialCode, countryCode: selectedCountryItem.countryCode,flag:flagImage)
+        }
         self.dismiss(animated: true, completion: nil)
         return nil
     }

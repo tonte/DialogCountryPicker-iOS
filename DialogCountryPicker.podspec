@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "DialogCountryPicker"
-  spec.version = "1.0.0"
+  spec.version = "1.0.1"
   spec.summary = "Easy to use country picker"
   spec.homepage = "https://github.com/tonte/DialogCountryPicker-iOS"
   spec.license = { type: 'MIT', file: 'LICENSE' }

@@ -7,14 +7,37 @@
 //
 
 import UIKit
-
-class ViewController: UIViewController {
-
+import DialogCountryPicker
+class ViewController: UIViewController,DialogCountryPickerDelegate {
+    @IBOutlet weak var selectedCountryView: UIStackView!
+    @IBOutlet weak var countryFlagView: UIImageView!
+    @IBOutlet weak var countryNameLabel: UILabel!
+    @IBOutlet weak var countryDialCodeLabel: UILabel!
+    
+    
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    
+    
+    @IBAction func touchMeButtonClicked(_ sender: Any) {
+        showPicker()
+    }
+    
+    func didSelectCountry(name: String, dialCode: String, countryCode: String, flag: UIImage) {
+        selectedCountryView.isHidden = false
+        countryNameLabel.text = name
+        countryDialCodeLabel.text = dialCode
+        countryFlagView.image = flag
+    }
+   
+    
+    func showPicker(){
+        let picker = DialogCountryPicker()
+        picker.display(delegate: self, viewControllerToPresentOn: self,showDialCode: true)
+    }
+    
 }
 

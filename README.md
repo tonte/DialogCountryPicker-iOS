@@ -15,5 +15,5 @@ Simple, Easy to use country picker for iOS built in Swift
 
 # Installation
 ## CocoaPods
-CocoaPods is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Alamofire into your Xcode project using CocoaPods, specify it in your Podfile:
+CocoaPods is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate DialogCountryPicker into your Xcode project using CocoaPods, specify it in your Podfile:
 `Pod install DialogCountryPicker`

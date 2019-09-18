@@ -8,12 +8,21 @@ Simple, Easy to use country picker for iOS built in Swift
 * iOS 9.0 and above
 
 # Features
+* Lightweight
 * Easy to use
-* Search Functionality
+* Search functionality
+![Screenshot 3](https://i.imgur.com/IxoMsuM.png)
 
-![Screenshot 2](https://i.imgur.com/DQhukgP.png)
+* Show/Hide DialCode
+![Screenshot 2](https://i.imgur.com/yn88C9g.png)
 
 # Installation
 ## CocoaPods
 CocoaPods is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate DialogCountryPicker into your Xcode project using CocoaPods, specify it in your Podfile:
 `Pod install DialogCountryPicker`
+
+
+
+# Usage
+
+

@@ -17,6 +17,7 @@
 		2F021A7022DE2B9D0096500C /* Flags.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FAA641722DBD4E700F795C7 /* Flags.xcassets */; };
 		2F021A7222DE38890096500C /* DialogCountryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F021A7122DE38890096500C /* DialogCountryPickerView.swift */; };
 		2F295172232FF50D00997A30 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2F021A4B22DE19D30096500C /* Resources.bundle */; };
+		2F921FD623323B890037A8F4 /* CallingCodes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FAA641622DBD4E700F795C7 /* CallingCodes.plist */; };
 		2FAA640A22DBD4C000F795C7 /* DialogCountryPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FAA640822DBD4C000F795C7 /* DialogCountryPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FAA641822DBD4E700F795C7 /* DialogCountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAA641322DBD4E400F795C7 /* DialogCountryPicker.swift */; };
 		2FAA641922DBD4E700F795C7 /* DialogCountryPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAA641122DBD4E400F795C7 /* DialogCountryPickerTableViewCell.swift */; };
@@ -28,13 +29,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2F021A5122DE1A590096500C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2FAA63FC22DBD4C000F795C7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2F021A4A22DE19D30096500C;
-			remoteInfo = Resources;
-		};
 		2F021A6D22DE204F0096500C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2FAA63FC22DBD4C000F795C7 /* Project object */;
@@ -211,7 +205,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				2F021A5222DE1A590096500C /* PBXTargetDependency */,
 			);
 			name = DialogCountryPicker;
 			productName = DialogCountryPicker;
@@ -264,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F921FD623323B890037A8F4 /* CallingCodes.plist in Resources */,
 				2F021A7022DE2B9D0096500C /* Flags.xcassets in Resources */,
 				2F021A5322DE1AA90096500C /* customCells.xib in Resources */,
 				2F021A5422DE1AA90096500C /* Main.storyboard in Resources */,
@@ -325,11 +319,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2F021A5222DE1A590096500C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2F021A4A22DE19D30096500C /* Resources */;
-			targetProxy = 2F021A5122DE1A590096500C /* PBXContainerItemProxy */;
-		};
 		2F021A6E22DE204F0096500C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2FAA640422DBD4C000F795C7 /* DialogCountryPicker */;

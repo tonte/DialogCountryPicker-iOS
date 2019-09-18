@@ -67,11 +67,7 @@ open class DialogCountryPickerView:UIViewController,UITableViewDelegate,UITableV
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let index = indexPath.row
-        guard let resourcePath = Bundle(for: DialogCountryPickerView.classForCoder()).path(forResource: "Resources", ofType: "bundle"),
-            let bundle = Bundle(path: resourcePath) else {
-                return UITableViewCell()
-        }
-        
+        let bundle = Bundle(for: DialogCountryPickerView.classForCoder())
         guard let cellNib = bundle.loadNibNamed("customCells", owner: nil, options: nil) else {return UITableViewCell()}
         guard let cell = cellNib[0] as? DialogCountryPickerTableViewCell else {return UITableViewCell()}
         let country = filteredCountries[index]
@@ -122,10 +118,7 @@ open class DialogCountryPickerView:UIViewController,UITableViewDelegate,UITableV
     
     public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         let selectedCountryItem = filteredCountries[indexPath.row]
-        guard let resourcePath = Bundle(for: DialogCountryPickerView.classForCoder()).path(forResource: "Resources", ofType: "bundle"),
-            let bundle = Bundle(path: resourcePath) else {
-                return nil
-        }
+        let bundle = Bundle(for: DialogCountryPickerView.classForCoder())
         let flag:UIImage? = UIImage(named: selectedCountryItem.flag, in: bundle, compatibleWith: nil)
         if let flagImage = flag{
             delegate?.didSelectCountry(name: selectedCountryItem.name, dialCode: selectedCountryItem.dialCode, countryCode: selectedCountryItem.countryCode,flag:flagImage)

@@ -20,10 +20,7 @@ class DialogCountryPickerTableViewCell: UITableViewCell {
     
     
     func setup(flag:String,name:String,dialCode:String){
-        guard let resourcePath = Bundle(for: DialogCountryPickerView.classForCoder()).path(forResource: "Resources", ofType: "bundle"),
-            let bundle = Bundle(path: resourcePath) else {
-                return
-        }
+        let bundle = Bundle(for: DialogCountryPickerView.classForCoder())
         self.flagView.image = UIImage(named: flag, in: bundle, compatibleWith: nil)
         self.countryName.text = name
         self.dialCodeLabel.text = dialCode

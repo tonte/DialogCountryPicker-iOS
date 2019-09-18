@@ -12,10 +12,7 @@ open class DialogCountryPicker{
     public init() {
     }
     public func display(delegate:DialogCountryPickerDelegate, viewControllerToPresentOn:UIViewController,showDialCode:Bool = true){
-        guard let resourcePath = Bundle(for: DialogCountryPickerView.classForCoder()).path(forResource: "Resources", ofType: "bundle"),
-            let bundle = Bundle(path: resourcePath) else {
-                return
-        }
+         let bundle = Bundle(for: DialogCountryPickerView.classForCoder())
         guard let vc = UIStoryboard(name: "Main", bundle: bundle).instantiateInitialViewController() as? DialogCountryPickerView else {
             return
         }

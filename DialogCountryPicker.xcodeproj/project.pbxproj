@@ -18,6 +18,11 @@
 		2F021A7222DE38890096500C /* DialogCountryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F021A7122DE38890096500C /* DialogCountryPickerView.swift */; };
 		2F295172232FF50D00997A30 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2F021A4B22DE19D30096500C /* Resources.bundle */; };
 		2F921FD623323B890037A8F4 /* CallingCodes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FAA641622DBD4E700F795C7 /* CallingCodes.plist */; };
+		2F921FDA23324B050037A8F4 /* customCells.xib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2FAA641422DBD4E400F795C7 /* customCells.xib */; };
+		2F921FDB23324B050037A8F4 /* CallingCodes.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2FAA641622DBD4E700F795C7 /* CallingCodes.plist */; };
+		2F921FDC23324B050037A8F4 /* Main.storyboard in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2FAA641022DBD4E400F795C7 /* Main.storyboard */; };
+		2F921FDD23324B050037A8F4 /* Flags.xcassets in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2FAA641722DBD4E700F795C7 /* Flags.xcassets */; };
+		2F921FDE23324B050037A8F4 /* Resources.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2F021A4B22DE19D30096500C /* Resources.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2FAA640A22DBD4C000F795C7 /* DialogCountryPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FAA640822DBD4C000F795C7 /* DialogCountryPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FAA641822DBD4E700F795C7 /* DialogCountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAA641322DBD4E400F795C7 /* DialogCountryPicker.swift */; };
 		2FAA641922DBD4E700F795C7 /* DialogCountryPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAA641122DBD4E400F795C7 /* DialogCountryPickerTableViewCell.swift */; };
@@ -37,6 +42,23 @@
 			remoteInfo = DialogCountryPicker;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2F921FD923324AC80037A8F4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				2F921FDA23324B050037A8F4 /* customCells.xib in CopyFiles */,
+				2F921FDB23324B050037A8F4 /* CallingCodes.plist in CopyFiles */,
+				2F921FDC23324B050037A8F4 /* Main.storyboard in CopyFiles */,
+				2F921FDD23324B050037A8F4 /* Flags.xcassets in CopyFiles */,
+				2F921FDE23324B050037A8F4 /* Resources.bundle in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2F021A4B22DE19D30096500C /* Resources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Resources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +223,7 @@
 				2FAA640122DBD4C000F795C7 /* Sources */,
 				2FAA640222DBD4C000F795C7 /* Frameworks */,
 				2FAA640322DBD4C000F795C7 /* Resources */,
+				2F921FD923324AC80037A8F4 /* CopyFiles */,
 			);
 			buildRules = (
 			);
